@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ---------- Utility ---------- */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.primary-btn {
+  background: #f44336;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.primary-btn:hover {
+  background: #d32f2f;
+}
+
+.secondary-btn {
+  background: #111;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.secondary-btn:hover {
+  background: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+nav ul a:hover {
+  color: #f44336;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-section {
+  background: url("images/hero.jpg") center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.hero-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero-section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* ---------- Music Section ---------- */
+.music-section {
+  background: #f4f4f4;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.music-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.music-section h2 span {
+  color: #f44336;
+}
+
+.music-section h4 {
+  max-width: 800px;
+  margin: auto;
+  font-weight: 400;
+}
+
+.ipad-iphone-img img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+/* ---------- About Music ---------- */
+.about-music {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-music h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-music p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.mac-img img {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+}
+
+/* ---------- Video Section ---------- */
+.video-section {
+  background: url("images/video.jpg") center/cover no-repeat;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.video-section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.video-section p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ---------- Gift Section ---------- */
+.gift-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.gift-card img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.gift-content h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.gift-content p {
+  margin-bottom: 10px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #111;
+  color: #ccc;
+}
+
+.footer-upper {
+  padding: 60px 0;
+}
+
+.footer-upper .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  color: #f44336;
+}
+
+.footer-lower {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 42px;
+  }
+
+  .gift-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}

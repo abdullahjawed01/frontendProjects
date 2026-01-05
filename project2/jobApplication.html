@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+ 
+    <main style="display: flex;flex-direction: column; align-items: center; justify-content: center; margin-top: 50px; border-radius: 40px; background-color: antiquewhite; padding: 30px; width: 30%; margin-left: auto; margin-right: auto;">
+        <h1>Job Application Form</h1>
+        <form action="#" method="post" style="display: grid;">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="position" >Job Role:</label><br>
+            <select style="margin-bottom:20px;" name="Job-role" id="">
+                <option value="front-end">Front-End Developer</option>
+                <option value="back-end">Back-End Developer</option>
+                <option value="full-stack">Full-Stack Developer</option>
+            </select>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" placeholder="Submit" accept=".pdf,.doc,.docx" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+
+            <label for="City">City:</label><br>
+            <input type="text" id="city" name="city" placeholder="Enter your city name" required><br><br>
+
+             <label for="Pincode">Pincode:</label><br>
+            <input type="number" id="Pincode" name="Pincode" placeholder="Enter your pincode" required><br><br>
+
+            <input type="submit" value="Apply Now" style="height: 40px;">
+        </form>
+    </main>
+
+</body>
+</html>
